@@ -1,0 +1,223 @@
+/* TOMBOL ON OFF */
+
+
+
+.tombolParent{
+  width: 55px;
+  height: 25px;
+  background-color:rgb(174, 174, 174);
+  position: relative;
+  border-radius: 20px;
+  bottom: 2px;
+  /* align-items: center; */
+  align-content: center;
+}
+
+.tombolParent:hover{
+  cursor: pointer;
+}
+
+
+.tombol{
+  background-color: rgb(255, 255, 255);
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 50%;
+  top: 2px;
+  left: 3px;
+  transition: 0.5s;
+  
+
+}
+
+
+
+
+.tombolPOn{
+  background-color:rgb(5, 127, 250);
+  width: 55px;
+  height: 25px;
+  position: relative;
+  border-radius: 20px;
+  bottom: 2px;
+  /* align-items: center; */
+  align-content: center;
+
+}
+.tombolPOn{
+  cursor: pointer;
+}
+.tombolOn{
+  background-color: rgb(255, 255, 255);
+  left: 33px;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  border-radius: 50%;
+  top: 2px;
+  
+}
+
+
+
+/* =========== */
+/* .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }*/
+  
+  /* Tampilan tombol ketika tidak dicentang */
+  /* .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  } */
+/* =========   */
+
+
+body{
+    background-color: #e8e7e7;
+  
+    
+}
+
+.containerr{
+    
+    width: 750px;
+    height: 450px;
+    background-color: #ffffff;
+    margin-left: 200px;
+    display: flex;
+    border-radius: 30px;
+    margin: auto;
+    margin-top: 30px;
+    box-shadow: 0.2px 0.2px 5px black;
+    
+}
+.container1{
+    width: 300px;
+    height: 450px;
+    background-color: #005F97;
+    border-radius: 30px 0px 0px 30px;
+    color: white;
+
+}
+.container2{
+    width: 450px;
+    height: 450px;
+}
+
+.container1 img{
+    margin-top: 20px;
+    width: 38%;
+    height: 38%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.containerr .container2 button{
+    margin-left: 350px;
+    margin-top: 10px;
+}
+
+.container2 table tr td{
+    padding-bottom: 10px;
+    font-size: 20px;
+    
+}
+.spasiTable{
+    padding-right: 50px;
+}
+.container2 table{
+    margin-left: 30px;
+}
+.alert2{
+    margin-top:20px ;
+}
+
+.containerAdd{
+    font-family: Helvetica;
+    height: 300px;
+    width: 400px;
+    margin: auto;
+    /* background-color: black; */
+   
+}
+.salahInput{
+    border: 0.5px solid red;
+
+}
+
+
+/* NAV */
+
+
+
+/* Dark mode */
+.darkMode{
+    background-color: black;
+    color: white;
+}
+.fontPutih th{
+    color: white;
+}
+/* .fontDatabase{
+  color: white;
+} */
+
+.spasiBwah{
+  width: 100%;
+  height: 500px;
+  /* background-color: black; */
+  /* background-color: red; */
+}

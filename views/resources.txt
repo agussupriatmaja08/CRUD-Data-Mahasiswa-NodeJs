@@ -1,0 +1,6 @@
+ <%if(a == 1 && typeof tampilAlert == true){ %>
+                <!-- typeof a == true &&  -->
+
+                <div class="alert alert-success" role="alert">
+                    Berhasil Disimpan!</div>
+                <%  } %>

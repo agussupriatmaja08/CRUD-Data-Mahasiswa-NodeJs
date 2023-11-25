@@ -1,0 +1,148 @@
+
+
+.aAtas{
+    width: 100%;
+    height: 500px;
+    margin-top: 0px;
+
+    
+    
+}
+.aAtas .aimg2{
+    width: 100%;
+    height: 500px;
+    background-image: url('/img/Master-Plan-Undiksha-2021.jpeg');
+    filter: brightness(54%);
+
+    background-attachment: fixed;
+}
+
+.aAtas .aimg1{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: -350px;
+    z-index: 9;
+    animation-name: muncul;
+    animation-duration: 1s;
+}
+
+.aAtas h1{
+    position: relative;
+    top: -350px;
+    color: white;
+    animation-name: muncul;
+    animation-duration: 1s;
+}
+
+ .atengah-1{
+    height: 500px;
+    width: 100%;
+    display: flex;
+ }
+.atengah1-1{
+    height: 450px;
+    width: 60%;
+    text-align: justify;
+}
+.atengah1-2 .img1 {
+    width: 450px;
+    height: 450px;
+    overflow: hidden;
+}
+.atengah1-2 .img1 img{
+    width: 550px;
+    height: 450px;
+    /* margin-left: 0px; */
+    position: relative;
+    top: -30px;
+    transition: transform .2s ease-out;
+    
+}
+.atengah1-2 .img1 img:hover{
+ 
+    /* animation-fill-mode:both; */
+    transform: scale(1.2);
+
+}
+
+.atengah-2{
+    height: 450px;
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+
+.aTentang {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+.atengah3{
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+.atengah3-1{
+    width: 50%;
+    height: 450px;
+    background-color:rgb(239, 236, 236);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    transition:.5s;
+
+}
+.atengah3-2 {
+    width: 50%;
+    height: 450px;
+    background-color:rgb(239, 236, 236);
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    transition:.5s;
+}
+
+.atengah3-1:hover{
+    cursor: pointer;
+    background-color:rgb(166, 223, 240);
+}
+.atengah3-2:hover{
+    cursor: pointer;
+    background-color:rgb(166, 223, 240);
+}
+
+
+/* ANIMASI */
+@keyframes muncul{
+    0%{filter: opacity(0);margin-top: 100px;}
+    100%{filter: opacity(1);}
+}
+@keyframes fotoRektorKiri{
+    0%{margin-right: 300px ;}
+    100%{margin-right: 10px ;}
+}
+@keyframes fotoRektorKanan {
+    0%{margin-left: 300px ;}
+    100%{margin-left: 10px ;}
+}
+
+.fotoRektorKiri{
+    animation-name: fotoRektorKiri;
+    animation-duration: 1s;
+}
+.fotoRektorKanan{
+    animation-name: fotoRektorKanan;
+    animation-duration: 1s;
+}
+.hiden{
+    filter: opacity(0);
+}
+.muncul{
+    animation-name: muncul;
+    animation-duration: 1s;   
+}

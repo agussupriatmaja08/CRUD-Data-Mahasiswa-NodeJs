@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah data mahasiswa</title>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/styleMe.css">
+    <script src="/js/jsMe/berhasil.js"></script>
+</head>
+ 
+<body class="body">
+    <nav class="navbar bg-dark mb-5 ">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                Form tambah mahasiswa
+            </a>
+        </div>
+    </nav>
+    <div class="containerAdd">
+        <h3 class="m-auto"> <b>FORM</b></h3>
+        <hr>
+        <form action="/add" method="post" enctype="multipart/form-data" >
+            <div class="mb-2">
+                <% if (typeof errors != 'undefined') { %>
+
+                <div class="alert alert-danger" role="alert">
+                    <% errors.forEach(error => { %>
+                    <ul>
+                        <li><%= error.msg %></li>
+                    </ul>
+                    <% }) %>
+                </div>
+               
+
+                <% }else if(typeof tampilAlert != 'undefined'){ %>
+                    
+        
+                        <div class="alert alert-success" role="alert">
+                            Berhasil Disimpan!</div>
+                        <%  } %>
+
+               
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" name="nama" required value="<%=dataMhs.nama%>">
+
+            </div>
+            <div class="mb-2">
+                <label for="nim" class="form-label">Nim</label>
+                <input type="text" class="form-control <%= salahNim%>" id="nim" name="nim" required value="<%=dataMhs.nim%>">
+
+            </div>
+            <div class="mb-2">
+                <label for="jurusan" class="form-label">Jurusan</label>
+                <input type="text" class="form-control" id="jurusan" name="jurusan" required value="<%=dataMhs.jurusan%>">
+
+            </div>
+            <div class="mb-2">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control  <%= salahEmail  %>" id="email" name="email" required value="<%=dataMhs.email%>">
+
+            </div>
+            <div class="mb-2">
+                <label for="noHp" class="form-label">No Hp</label>
+                <input type="text" class="form-control" id="noHp" name="noHp" required value="<%=dataMhs.noHp%>">
+
+            </div>
+            <div class="mb-2">
+                <label for="callName" class="form-label">Nama Panggilan</label>
+                <input type="text" class="form-control" id="callname" name="callname" required value="<%=dataMhs.callname%>">
+
+            </div>
+            <div class="mb-2">
+                <label for="foto" class="form-label">Upload Foto</label>
+                <input type="file" class="control" id="foto" name="foto" required>
+
+            </div>
+            <center>
+                 <button type="submit" class="btn btn-primary mt-3">Kirim</button> 
+
+            </center>
+        </form>
+        
+        <center>
+            <a href="/database"><button class="btn btn-danger mt-3">Kembali</button></a>
+        </center>
+    </div>
+    <!-- <div class="spasiBwah"></div> -->
+
+</body>
+
+</html>

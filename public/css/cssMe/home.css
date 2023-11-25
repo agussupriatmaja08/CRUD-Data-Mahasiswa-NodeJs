@@ -1,0 +1,73 @@
+
+body{
+    background-color: #e8e7e7;
+  
+    
+}
+.conAnimasi{
+    animation-name: muncul;
+    animation-duration: 1s;
+}
+
+.hatas{
+    height: 500px;
+    width: 100%;
+
+   
+    /* filter:brightness(24%) ; */
+
+}
+
+
+.hatas .backgroundd{
+    height: 500px;
+    width: 100%;
+   
+    background-image: url('/img/546508.jpg');
+    filter: brightness(54%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100% 650px;
+
+}
+
+.undiksha{
+    position: relative;
+    top: 150px;
+}
+.hatas h2{
+    position: relative;
+    top: -340px;
+}
+.hatas img {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    top: -350px;
+    /* filter: brightness(108%); */
+
+}
+
+.tengah1{
+    width: 100%;
+    height: 300px;
+    /* background-color: #005F97; */
+    display: flex;
+}
+.tengah1-1{
+    width: 60%;
+    
+}
+
+.tengah1-1 p{
+    text-align: justify;
+}
+
+.tengah1-2{
+    width: 35%;
+
+
+}
+
+
+/* ABOUT */

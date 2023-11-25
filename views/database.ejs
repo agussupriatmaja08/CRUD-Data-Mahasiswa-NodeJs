@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/styleMe.css">
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <style>
+    .kosong {
+      width: 100%;
+      height: 50px;
+    }
+  </style>
+
+</head>
+
+<body class="body">
+ 
+  <div class="kosong"></div>
+  <a href="/add" class="btn btn-primary m-lg-4 mt-5">Add</a>
+
+
+  <table class="table table-striped table-hover mt-2 m-lg-3 body">
+
+    
+      <tr>
+        <h2>Daftar Mahasiswa</h2>
+        
+          <th scope="col" class="fontDatabase">No</th>
+          <th scope="col" class="fontDatabase">Nama</th>
+          <th scope="col" class="fontDatabase">Nim</th>
+          <th scope="col" class="fontDatabase">Jurusan</th>
+      
+
+        <center>
+          <th class="fontDatabase">Pengaturan</th>
+
+        </center>
+      </tr>
+      <% if (dataMhs.length === 0) { %>
+      <tr>
+        <td colspan="5">
+          <div class="alert alert-light text-opacity-25" role="alert">
+            <center>Data masih kosong</center>
+          </div>
+        </td>
+
+      </tr>
+
+      <% }%>
+    
+
+    <body>
+      <% let i = 1; %>
+      <% dataMhs.forEach(mhs => { %>
+
+      <tr>
+        <th scope="row" class="fontDatabase"><%=i%></th>
+        <td class="fontDatabase"><%= mhs.nama%></td>
+        <td class="fontDatabase"><%= mhs.nim%></td>
+        <td class="fontDatabase"><%= mhs.jurusan%></td>
+        <td> <a href="detail/<%=mhs.nim %>"> <button class="btn btn-success rounded-3"> <i
+                class="bi bi-info-circle"></i> Detail</button>
+          </a>
+          <a href="hapus/<%=mhs.nim%>"><button class="btn btn-danger rounded-3"
+              onclick=" return confirm(`Yakin <%=mhs.nim%> dihapus?` )"> <i class="bi bi-trash"></i> Hapus</button></a>
+          <a href="edit/<%=mhs.nim %>"><button class="btn btn-primary rounded-3"><i
+                class="bi bi-pencil"></i>Edit</button></a>
+        </td>
+
+
+        <% i=1+i ;%>
+      </tr>
+      <% }) %>
+
+    </body>
+  </table>
+
+
+
+
+
+  <script src="/js/jsMe/dom.js"></script>
+
+</body>
+
+</html>
